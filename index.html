@@ -16,11 +16,21 @@
         <div class="card">
             <h1>{{ title }}</h1>
             <div class="form-control">
-                <input type="text" v-bind:placeholder="placeholderString" v-bind:value="inputValue">
+                <input
+                type="text"
+                ref="noteInput"
+                v-bind:placeholder="placeholderString" v-bind:value="inputValue"
+                v-on:input="inputChangeHandler"
+            />
             </div>
-            <h2>inputValue: {{ inputValue }}</h2>
-            <button class="btn">Aggiungere</button>
+            <!-- <h2>inputValue: {{ inputValue }}</h2> -->
+            <button class="btn" v-on:click="addNewNote">Aggiungere</button>
             <hr>
+            <ul class="list">
+                <li class="list-item" v-for="note in notes">
+                    {{ note }}
+                </li>
+            </ul>
         </div>
         <!--<div class="card center">
             
