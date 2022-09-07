@@ -15,7 +15,15 @@ const App = {
         addNewNote(){
             this.notes.push(this.inputValue)
             this.inputValue = ''
-        }
+        },
+        /*
+        Non serve più perché abbiamo aggiunto l'evento direttamente nel html v-on:keypress.enter="addNewNote"
+        inputKeyPress(event){
+            //Aggiungiamo la nota premendo il tasto "Enter"
+            if(event.key === "Enter"){
+                this.addNewNote()
+            }
+        }*/
     },
 }
 

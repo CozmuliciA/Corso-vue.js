@@ -21,6 +21,7 @@
                 ref="noteInput"
                 v-bind:placeholder="placeholderString" v-bind:value="inputValue"
                 v-on:input="inputChangeHandler"
+                v-on:keypress.enter="addNewNote"
             />
             </div>
             <!-- <h2>inputValue: {{ inputValue }}</h2> -->
