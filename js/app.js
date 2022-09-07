@@ -13,9 +13,21 @@ const App = {
             this.inputValue = event.target.value
         },
         addNewNote(){
-            this.notes.push(this.inputValue)
-            this.inputValue = ''
+            if(this.inputValue !== ""){
+                this.notes.push(this.inputValue)
+                this.inputValue = ''
+            }            
         },
+        capitalize(item){
+            function capitalizeFirstLetter(string) {
+                return string.charAt(0).toUpperCase() + string.slice(1);
+            }
+
+            return capitalizeFirstLetter(item)
+        },
+        removeNote(id){
+            this.notes.splice(id,1)
+        }
         /*
         Non serve più perché abbiamo aggiunto l'evento direttamente nel html v-on:keypress.enter="addNewNote"
         inputKeyPress(event){
