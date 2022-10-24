@@ -348,4 +348,8 @@ h3 {
 [v-cloak] {
   display: none;
 }
+
+.w-25 {
+  width: 25%;
+}
 /*# sourceMappingURL=theme.css.map */

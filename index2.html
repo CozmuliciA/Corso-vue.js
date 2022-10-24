@@ -20,9 +20,9 @@
             <div v-html="myHTML"></div>
 
             <h3 v-text="titleH3"></h3>
-            <ul class="list">
-                <li class="list-item" v-for="item in 5">
-                    {{ item }}
+            <ul class="list w-25">
+                <li class="list-item" v-for="(value, key) in person">
+                    <strong>{{ key }}</strong> {{ value }}
                 </li>
             </ul>
         </div>
