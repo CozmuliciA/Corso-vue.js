@@ -32,7 +32,7 @@
             <hr>
             <ul class="list" v-if="notes.length !== 0">
                 <li class="list-item" v-for="(note, id) in notes">
-                    {{ capitalize(note) }}
+                    <span :class="['bold', {'warning-color': note.length > 10}]">{{ capitalize(note) }}</span>
                     <!-- {{ toUpperCase(note) }} -->
                     <button class="btn danger" v-on:click="removeNote(id)">Elimina</button>
                 </li>
