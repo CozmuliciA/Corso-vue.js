@@ -18,6 +18,10 @@ const App = {
                 this.inputValue = ''
             }            
         },
+        doubleCount() {
+            console.log('doubleCount')
+            return this.notes.length * 2;
+        },
         capitalize(item){
             function capitalizeFirstLetter(string) {
                 return string.charAt(0).toUpperCase() + string.slice(1);
@@ -42,6 +46,16 @@ const App = {
             }
         }*/
     },
+    computed: {
+        /* È stato ottimizzato il metodo doubleCount().
+           In questo modo doubleCountComputed verrà 
+           attivato solamente se ci sono modifiche.
+        */
+        doubleCountComputed() {
+            console.log('doubleCountComputed')
+            return this.notes.length * 2;
+        }
+    }
 }
 
 

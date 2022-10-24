@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue.JS Project</title>
     <link rel="stylesheet" href="css/theme.css">
-    
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>Vue.JS Project</title>
 </head>
 
 </head>
@@ -35,7 +36,7 @@
                 </li>
                 <hr>
                 <li>
-                    <strong>Quantità: {{notes.length}} </strong>
+                    <strong>Quantità: {{ notes.length }}</strong> | Quantità doppia: {{ doubleCountComputed }}
                 </li>
             </ul>
             <div v-else>Non ci sono note.</div>
