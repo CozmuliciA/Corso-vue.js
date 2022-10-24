@@ -344,4 +344,8 @@ h3 {
 .warning-color {
   color: darkred;
 }
+
+[v-cloak] {
+  display: none;
+}
 /*# sourceMappingURL=theme.css.map */
