@@ -25,6 +25,11 @@ const App = {
 
             return capitalizeFirstLetter(item)
         },
+        toUpperCase(item){
+            
+            return item.toUpperCase()
+        },
+        
         removeNote(id){
             this.notes.splice(id,1)
         }
