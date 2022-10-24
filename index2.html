@@ -18,6 +18,13 @@
             <!-- <h1>{{ title }}</h1> -->
             <h1 v-text="title"></h1>
             <div v-html="myHTML"></div>
+
+            <h3 v-text="titleH3"></h3>
+            <ul class="list">
+                <li class="list-item" v-for="item in 5">
+                    {{ item }}
+                </li>
+            </ul>
         </div>
     </div>
 
