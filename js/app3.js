@@ -6,9 +6,27 @@ const app = Vue.createApp({
             firstName: "Aurel",
             lastName: "Cozmulici",
             age: 29
-        }
+        },
+        person2: {
+            firstName: "John",
+            lastName: "Smith",
+            age: 35
+        },
     }),
-    methods: {},
+    methods: {
+        changePerson(){
+            this.person = this.person2;
+            hide();
+            
+            /*
+            Uguale al commando di sopra
+            this.person.firstName = this.person2.firstName;
+            this.person.lastName = this.person2.lastName;
+            this.person.age = this.person2.age;
+            */
+            console.log("change person");
+        }
+    },
 })
 
 app.mount('#app')
