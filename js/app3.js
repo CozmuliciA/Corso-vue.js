@@ -15,9 +15,7 @@ const app = Vue.createApp({
     }),
     methods: {
         changePerson(){
-            this.person = this.person2;
-            hide();
-            
+            this.person = this.person2;           
             /*
             Uguale al commando di sopra
             this.person.firstName = this.person2.firstName;
